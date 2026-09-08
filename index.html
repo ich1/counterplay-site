@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counterplay Consulting — Offensive Security</title>
+<meta name="description" content="Independent offensive security consultancy in Northern Virginia. Penetration testing, red team operations, and adversary emulation — including the report.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#e8e6e1;
+  --ink-dim:#a8a49c;
+  --ink-faint:#6e6a63;
+  --bg:#14151a;
+  --bg-raise:#1a1c22;
+  --rule:#2a2d35;
+  --accent:#c8a45c;
+  --measure:min(34rem,100%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;
+  font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-wrap:pretty;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:60rem;margin:0 auto;padding:0 2rem}
+
+/* ---- masthead ---- */
+header{padding:5.5rem 0 0}
+.mark{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-faint);margin:0 0 3.5rem;
+}
+h1{
+  font-family:Newsreader,Georgia,serif;font-weight:400;
+  font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;
+  margin:0 0 1.5rem;letter-spacing:-.015em;
+}
+h1 em{font-style:italic;color:var(--accent);margin-right:.12em}
+.standfirst{
+  font-size:1.15rem;color:var(--ink-dim);max-width:var(--measure);
+  margin:0 0 3rem;line-height:1.6;
+}
+
+/* ---- rule ---- */
+.rule{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* ---- prose sections ---- */
+section{padding:3.5rem 0}
+h2{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);
+  margin:0 0 1.75rem;
+}
+p{margin:0 0 1.1rem;max-width:var(--measure)}
+p:last-child{margin-bottom:0}
+strong{font-weight:600;color:var(--ink)}
+
+/* ---- services: definition list, not cards ---- */
+dl{margin:0;display:grid;gap:1.75rem}
+@media(min-width:44rem){dl{grid-template-columns:13rem 1fr;gap:1.75rem 2.5rem}}
+dt{
+  font-weight:600;font-size:.95rem;color:var(--ink);
+  padding-top:.1rem;
+}
+dd{margin:0;color:var(--ink-dim);font-size:.95rem;max-width:min(32rem,100%)}
+
+/* ---- credentials line ---- */
+.creds{
+  font-family:"IBM Plex Mono",monospace;font-size:.8rem;
+  color:var(--ink-dim);letter-spacing:.02em;line-height:2.1;
+}
+.creds span{color:var(--ink-faint)}
+
+/* ---- contact ---- */
+.contact{padding:3.5rem 0 2rem}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);
+  transition:border-color .15s ease,color .15s ease}
+a:hover,a:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.email{
+  font-family:"IBM Plex Mono",monospace;font-size:1.05rem;
+  display:inline-block;margin-bottom:.35rem;
+}
+.loc{color:var(--ink-faint);font-size:.9rem;margin:0}
+
+footer{
+  border-top:1px solid var(--rule);padding:2rem 0 4rem;
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;
+  color:var(--ink-faint);letter-spacing:.06em;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem;
+}
+@media(max-width:44rem){
+  .wrap{padding:0 1.25rem}
+  .creds{font-size:.72rem;line-height:2.2}
+  .email{font-size:.9rem}
+  header{padding-top:3.5rem}
+  .mark{margin-bottom:2.5rem}
+  section{padding:2.75rem 0}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="mark">Counterplay Consulting</p>
+    <h1>Someone should try to <em>break it</em> before someone else does.</h1>
+    <p class="standfirst">
+      Independent offensive security out of Northern Virginia. Penetration testing,
+      red team operations, and adversary emulation — scoped, executed, and written up
+      by the person who did the work.
+    </p>
+  </header>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Practice</h2>
+    <dl>
+      <dt>Penetration testing</dt>
+      <dd>Internal and external network, web application, and cloud assessments.
+          Engagements have run from a handful of hosts to several thousand.</dd>
+
+      <dt>Red team &amp; adversary emulation</dt>
+      <dd>Full-scope operations: OSINT, attack planning, exploitation, and
+          post-engagement briefing. Emulation mapped to threats that actually
+          apply to the environment.</dd>
+
+      <dt>Subcontract delivery</dt>
+      <dd>White-label capacity for consultancies and MSSPs that have sold the
+          work and need someone to deliver it. Client-facing report included —
+          not raw findings handed back for someone else to clean up.</dd>
+    </dl>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Background</h2>
+    <p>
+      Counterplay is <strong>Shannon Francis</strong> — thirteen years in offensive
+      security across commercial and federal engagements, most recently leading
+      penetration testing teams against large government network infrastructure.
+    </p>
+    <p>
+      The work includes custom exploit development from patch-diff analysis, not
+      only tooling. It also includes production software: the same hands that run
+      the engagement write the automation and the deliverable.
+    </p>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Credentials</h2>
+    <p class="creds">
+      CISSP <span>— ISC²</span><br>
+      CPTS <span>— Hack The Box, Certified Penetration Testing Specialist</span><br>
+      CRTO <span>— Zero-Point Security, Certified Red Team Operator</span><br>
+      B.S. Computer Science <span>— University of Central Florida</span>
+    </p>
+  </section>
+
+  <hr class="rule">
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>
+      <a class="email" href="mailto:shannon@counterplayconsulting.com">shannon@counterplayconsulting.com</a>
+    </p>
+    <p class="loc">Fairfax County, Virginia · Available for engagements in the National Capital Region and remote.</p>
+  </section>
+
+  <footer>
+    <span>Counterplay Consulting</span>
+    <span>Established 2013</span>
+  </footer>
+
+</div>
+</body>
+</html>
