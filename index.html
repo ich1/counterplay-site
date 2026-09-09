@@ -7,24 +7,24 @@
 <meta name="description" content="Independent offensive security consultancy in Northern Virginia. Penetration testing, red team operations, and adversary emulation — including the report.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#12161c;
-  --ink-dim:#4a5560;
-  --ink-faint:#78838f;
-  --bg:#f7f6f3;
-  --bg-raise:#ffffff;
-  --rule:#d3d0c9;
-  --accent:#1f4e6b;
+  --ink:#e8e6e1;
+  --ink-dim:#a8a49c;
+  --ink-faint:#6e6a63;
+  --bg:#14151a;
+  --bg-raise:#1a1c22;
+  --rule:#2a2d35;
+  --accent:#c8a45c;
   --measure:min(34rem,100%);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0;background:var(--bg);color:var(--ink);
-  font-family:"Source Sans 3",-apple-system,Segoe UI,sans-serif;
-  font-size:16px;line-height:1.6;
+  font-family:Inter,system-ui,sans-serif;
+  font-size:16px;line-height:1.65;
   -webkit-font-smoothing:antialiased;
   text-wrap:pretty;
   overflow-wrap:break-word;
@@ -32,21 +32,20 @@ body{
 .wrap{max-width:60rem;margin:0 auto;padding:0 2rem}
 
 /* ---- masthead ---- */
-header{padding:4rem 0 0}
+header{padding:5.5rem 0 0}
 .mark{
-  font-family:"Source Serif 4",Georgia,serif;font-size:1rem;font-weight:700;
-  letter-spacing:0;color:var(--accent);margin:0 0 2.5rem;
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-faint);margin:0 0 3.5rem;
 }
 h1{
-  font-family:"Source Serif 4",Georgia,serif;font-weight:700;
-  font-size:clamp(2rem,4.6vw,2.9rem);line-height:1.18;
-  margin:0 0 1.25rem;letter-spacing:0;max-width:32rem;
+  font-family:Newsreader,Georgia,serif;font-weight:400;
+  font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;
+  margin:0 0 1.5rem;letter-spacing:-.015em;
 }
-h1 em{font-style:normal;font-weight:700;white-space:nowrap;
-  border-bottom:3px solid var(--accent);padding-bottom:1px}
+h1 em{font-style:italic;color:var(--accent);margin-right:.12em}
 .standfirst{
-  font-size:1.08rem;color:var(--ink-dim);max-width:var(--measure);
-  margin:0 0 2.5rem;line-height:1.55;
+  font-size:1.15rem;color:var(--ink-dim);max-width:var(--measure);
+  margin:0 0 3rem;line-height:1.6;
 }
 
 /* ---- rule ---- */
@@ -55,9 +54,9 @@ h1 em{font-style:normal;font-weight:700;white-space:nowrap;
 /* ---- prose sections ---- */
 section{padding:3.5rem 0}
 h2{
-  font-family:"Source Serif 4",Georgia,serif;font-size:1.3rem;font-weight:700;
-  letter-spacing:0;color:var(--ink);
-  margin:0 0 1.25rem;
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);
+  margin:0 0 1.75rem;
 }
 p{margin:0 0 1.1rem;max-width:var(--measure)}
 p:last-child{margin-bottom:0}
@@ -74,35 +73,35 @@ dd{margin:0;color:var(--ink-dim);font-size:.95rem;max-width:min(32rem,100%)}
 
 /* ---- credentials line ---- */
 .creds{
-  font-family:"Source Sans 3",sans-serif;font-size:.95rem;
-  color:var(--ink-dim);letter-spacing:0;line-height:1.9;
+  font-family:"IBM Plex Mono",monospace;font-size:.8rem;
+  color:var(--ink-dim);letter-spacing:.02em;line-height:2.1;
 }
 .creds span{color:var(--ink-faint)}
 
 /* ---- contact ---- */
 .contact{padding:3.5rem 0 2rem}
-a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule);
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);
   transition:border-color .15s ease,color .15s ease}
-a:hover,a:focus-visible{color:var(--ink);border-bottom-color:var(--accent)}
+a:hover,a:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 .email{
-  font-family:"Source Sans 3",sans-serif;font-size:1.1rem;font-weight:600;
+  font-family:"IBM Plex Mono",monospace;font-size:1.05rem;
   display:inline-block;margin-bottom:.35rem;
 }
-.loc{color:var(--ink-faint);font-size:.92rem;margin:0}
+.loc{color:var(--ink-faint);font-size:.9rem;margin:0}
 
 footer{
-  border-top:1px solid var(--rule);padding:1.75rem 0 3.5rem;
-  font-family:"Source Sans 3",sans-serif;font-size:.85rem;
-  color:var(--ink-faint);letter-spacing:0;
+  border-top:1px solid var(--rule);padding:2rem 0 4rem;
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;
+  color:var(--ink-faint);letter-spacing:.06em;
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem;
 }
 @media(max-width:44rem){
   .wrap{padding:0 1.25rem}
-  .creds{font-size:.88rem;line-height:1.9}
-  .email{font-size:1rem}
-  header{padding-top:2.75rem}
-  .mark{margin-bottom:2rem}
+  .creds{font-size:.72rem;line-height:2.2}
+  .email{font-size:.9rem}
+  header{padding-top:3.5rem}
+  .mark{margin-bottom:2.5rem}
   section{padding:2.75rem 0}
 }
 </style>
@@ -117,10 +116,10 @@ footer{
     <p class="standfirst">
       Independent offensive security out of Northern Virginia. Penetration testing,
       red team operations, and adversary emulation scoped, executed, and written up
-      by the person who did the work.
+      by the expert who did the work.
     </p>
   </header>
-
+</br>
   <hr class="rule">
 
   <section>
